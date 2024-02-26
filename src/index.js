@@ -8,7 +8,7 @@ const port = process.env.PORT ||10000
 
 const app = express()
 
-const allowedOrigins = ["http://localhost:3000","https://mappool-9a59c.firebaseapp.com","https://mappool-9a59c.web.app"];
+const allowedOrigins = ["http://localhost:3000","https://mappool-9a59c.firebaseapp.com","https://mappool-9a59c.web.app","https://mappool-9a59c--test-channe-id-x1omb20t.web.app"];
 
 const corsOptions =  {
     origin:allowedOrigins,
