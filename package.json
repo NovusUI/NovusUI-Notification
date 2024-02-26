@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "build": "npm i"
 
   },
   "author": "TheNodeNovice",
