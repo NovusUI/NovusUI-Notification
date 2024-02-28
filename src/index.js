@@ -86,7 +86,6 @@ app.post("/api/v1/sendmsgtotopic",(req,res)=>{
     notification: {
       "title": notification.title,
       "body": notification.body,
-      url:"https://google.com",
     },
    
     topic,  // Use the group ID as the FCM topic
