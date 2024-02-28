@@ -82,10 +82,12 @@ app.post("/api/v1/sendmsgtotopic",(req,res)=>{
    
   console.log(notification)
   const message = {
-    data: {},
+    data: {url:"https://youtube.com"},
     notification: {
       title: notification.title,
       body: notification.body,
+      click_action: "OPEN_URL",
+
     },
     topic,  // Use the group ID as the FCM topic
   };
