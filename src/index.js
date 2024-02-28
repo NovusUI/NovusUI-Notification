@@ -86,8 +86,11 @@ app.post("/api/v1/sendmsgtotopic",(req,res)=>{
     notification: {
       "title": notification.title,
       "body": notification.body,
+      
+    },
+    data:{
       "click_action": "OPEN_URL",
-      "data": {url:"https://youtube.com"},
+      url:"https://youtube.com",
     },
     topic,  // Use the group ID as the FCM topic
   };
