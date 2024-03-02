@@ -21,7 +21,7 @@ app.use(express.json())
 
 app.post('/api/v1/test-notification',(req,res)=>{
   
-    const registrationToken = 'dsDEYVWEd2zRXiOTd9Kf-5:APA91bGNv1TFkbKMPwa9HFelZ4CEGMidqtF7Ts-X1pmXjE557TB4YOdXraHUH8ayjSNEkcA1QWIvSWliskD3uKzZjxKnd2ehYI27njpw2vK6sFMi-JWshZrMRb2GOhmTgi9QW88RLIHh';
+    const registrationToken = 'fnhMzGnNUaztg1-o9vnZHE:APA91bFSnChfVIyG-fbHOHKQBmQbX1lMz00nVtRzv6fn2h9kEwrkPPcn7feofzElkpJRspD6-6tFRgU-_HBGqOvH6vbptjWg2MAZeAjd-fbK-UorunTM5cLK7jHInmsZ3jV3xXVmSBnD';
 
 const message = {
   data: {
@@ -102,15 +102,13 @@ app.post("/api/v1/sendmsgtotopic",(req,res)=>{
       res.status(500).json({ success: false, error: error.message });
     });
 })
+
 app.post("/api/v1/sendmsgtoregtoken",(req,res)=>{
    const {registrationToken, notification,data} = req.body
    
   //  isTokenValid(registrationToken)
    const message = {
-    data: {
-      title: 'Your Notification Title',
-      body: 'Your Notification Body',
-    },
+   
     notification: {
       title: notification.title,
       body:notification.body,
